@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 # for heroku
 ruby '2.1.0'
 
+# look for .env file, load it
+gem 'dotenv-rails', groups: [:development, :test]
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
 # Use sqlite3 as the database for Active Record
@@ -18,6 +21,7 @@ gem 'coffee-rails', '~> 4.0.0'
 
 gem 'quiet_assets'
 gem 'slim-rails'
+gem 'docusign_rest'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
